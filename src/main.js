@@ -12,6 +12,8 @@ import userrouter from "./routes/user.js";
 import requestRouter from "./routes/request.js";
 import messagerouter from "./routes/message.js";
 import { Server } from "socket.io";
+import dotenv from 'dotenv';
+dotenv.config();  // This loads variables from your .env file
 
 const main = express();
 const server = http.createServer(main);
